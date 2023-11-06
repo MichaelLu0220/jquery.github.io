@@ -1,6 +1,14 @@
 $(document).ready(function() {
-    $('#changeColor').click(function() {
-      $('h1').css('color', 'red');
+    var isRed = false;
+  
+    $('#toggleButton').click(function() {
+      if (isRed) {
+        $('#text').css('color', '');
+      } else {
+        $('#text').css('color', 'red');
+      }
+  
+      isRed = !isRed;
     });
   });
   
