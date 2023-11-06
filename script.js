@@ -1,14 +1,13 @@
 $(document).ready(function() {
     var isRed = false;
-  
-    $('#toggleButton').click(function() {
-      if (isRed) {
-        $('#text').css('color', '');
-      } else {
-        $('#text').css('color', 'red');
-      }
-  
-      isRed = !isRed;
+    $('#changeColor').click(function() {
+        if(isRed){
+            $('h1').css('color', 'black');
+        }
+        else{
+            $('h1').css('color', 'red');
+        }
+        isRed = !isRed;
     });
   });
   
